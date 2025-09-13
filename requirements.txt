@@ -1,0 +1,31 @@
+# Core ML libraries
+torch
+scikit-learn
+pandas
+numpy
+scipy
+
+# Recommendation systems
+implicit
+scikit-surprise
+sentence-transformers
+
+# Web framework and API
+fastapi
+uvicorn[standard]
+pydantic
+python-multipart
+
+# Database + caching
+sqlalchemy
+psycopg2-binary
+redis
+asyncpg
+
+# Data handling
+pyarrow
+polars
+
+# Monitoring + logging
+mlflow
+loguru

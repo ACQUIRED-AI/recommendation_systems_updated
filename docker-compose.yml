@@ -1,0 +1,19 @@
+version: "3.9"
+services:
+  api:
+    build: .
+    container_name: recommender-api
+    ports:
+      - "8000:8000"
+    environment:
+      - REDIS_URL=redis://redis:6379/0
+    volumes:
+      - ./asos.db:/app/asos.db
+    depends_on:
+      - redis
+
+  redis:
+    image: redis:latest
+    container_name: redis
+    ports:
+      - "6379:6379"
