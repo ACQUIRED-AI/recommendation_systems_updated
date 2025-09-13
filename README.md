@@ -33,7 +33,7 @@ Purpose: simulate interactions for training/testing without real logs.
 - I created this to not complicate having to write command lines when loading the docker.
 
 ## Recommended approach to run
-The easiest way is with Docker with this line:
+1. The easiest way is with Docker with this line:
 
 -> docker-compose up --build
 
@@ -41,7 +41,7 @@ Then open http://127.0.0.1:8000/docs
 
 OR:
 
-## For development/testing without Docker:
+2. For development/testing without Docker:
 Run redis in your terminal:
 
 -> docker run -d --name redis -p 6379:6379 redis
@@ -52,7 +52,7 @@ Then
 
 Then open http://127.0.0.1:8000/docs
 
-For manual Docker builds:
+3. For manual Docker builds:
 
 -> docker build -t recommender-api .
 
@@ -64,7 +64,7 @@ For manual Docker builds:
 
 In Swagger, expand POST /recommendations
 
-Input:
+**Input:**
 
 {
 
@@ -88,7 +88,7 @@ MORE:
 
 GET /healthz
 
-Output
+**Output**
 
 {
 
@@ -106,7 +106,7 @@ Output
 
 POST /recommendations
 
-Input
+**Input**
 
 {
 
@@ -120,7 +120,7 @@ Input
 
 }
 
-Output
+**Output**
 
 {
 
@@ -162,7 +162,7 @@ Output
 
 POST /interactions
 
-Input
+**Input**
 
 {
 
@@ -176,7 +176,7 @@ Input
 
 }
 
-Output
+**Output**
 
 {
 
@@ -191,7 +191,7 @@ Output
 
 GET /similar
 
-Input
+**Input**
 
 {
 
@@ -201,7 +201,7 @@ Input
 
 }
 
-Output
+**Output**
 
 {
 
